@@ -1,0 +1,18 @@
+@use "colors" as *;
+@use "mixins" as *;
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity .7s $ease-out, transform .7s $ease-out;
+
+    &.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+}

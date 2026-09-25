@@ -1,0 +1,19 @@
+$color-bg: #f2f0e8;
+$color-surface: #e8e5dc;
+$color-dark: #10110f;
+$color-dark-soft: #171914;
+$color-ink: #181914;
+$color-muted: #77776d;
+$color-line: rgba(24, 25, 20, .14);
+$color-line-dark: rgba(242, 240, 232, .18);
+$color-accent: #c8ff4a;
+$color-white: #fbfaf5;
+
+$font-sans: "Inter", Arial, sans-serif;
+$font-display: "Inter", Arial, sans-serif;
+
+$container: 1320px;
+$gutter: clamp(1.25rem, 4vw, 4rem);
+
+$ease-out: cubic-bezier(.22, 1, .36, 1);
+$ease-standard: cubic-bezier(.2, .7, .2, 1);
