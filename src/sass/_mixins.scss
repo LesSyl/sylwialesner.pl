@@ -1,5 +1,4 @@
 @use "colors" as *;
-@use "animations";
 
 @mixin container {
     width: min(calc(100% - (#{$gutter} * 2)), #{$container});

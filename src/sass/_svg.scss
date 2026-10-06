@@ -1,0 +1,21 @@
+.ribbon {
+	--line-dark: 52, 52, 46; /* RGB ciemnych linii */
+	--line-green: 188, 232, 30; /* RGB zielonego akcentu */
+	position: absolute;
+	inset: 0; /* rozciąga się na całą sekcję */
+	z-index: -1; /* pod tekstem */
+	width: 100%;
+	height: 100%;
+    opacity: 0.55;
+	display: block;
+	--ribbon-shift: 10vh; /* o ile przesunąć całą grafikę w dół */
+	overflow: visible; /* linie mogą wyjść poza ramkę SVG */
+	clip-path: inset(0 0 -60vh 0); /* przycina górę i boki, dół wolny na 60vh */
+	transform: translateY(var(--ribbon-shift));
+	pointer-events: none;
+}
+.ribbon path {
+	fill: none;
+	stroke-width: 0.7;
+	vector-effect: non-scaling-stroke;
+}
