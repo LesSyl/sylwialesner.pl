@@ -4,7 +4,7 @@
 
 [Podgląd strony](/dist/img/fullpage_snapshot.webp) 
 
-**Demo:** [do uzupełnienia – link do wersji online]
+
 
 ---
 
@@ -43,13 +43,11 @@ Jednostronicowa strona prezentująca usługi projektowania stron internetowych. 
 - **JavaScript** - vanilla, bez bibliotek
 - **SVG** - animowana wstęga linii w hero
 - **Gulp** - (`gulpfile.js`)
-- **npm** - (`package.json`) |
+- **npm** - (`package.json`)
 - **Inter** - font (SIL Open Font License)
 - **Git** - kontrola wercji, GitHub
 
 ## Struktura projektu
-
-Poniżej przykładowy układ. Dostosuj do swojego repozytorium:
 
 ```
 .
@@ -78,6 +76,7 @@ Poniżej przykładowy układ. Dostosuj do swojego repozytorium:
 ├── package-lock.json
 ├── polityka-prywatnosci.html
 └── README.md
+
 ```
 
 ## Animowana grafika w hero
@@ -103,4 +102,4 @@ Font Inter jest udostępniany na licencji [SIL Open Font License 1.1](https://op
 
 ## Autor
 
-[Sylwia Lesner] ·[LinkedIn](https://www.linkedin.com/in/sylwia-k-lesner/) / [sylwia.k.lesner@gmail.com]
+Sylwia Lesner · [LinkedIn](https://www.linkedin.com/in/sylwia-k-lesner/) / sylwia.k.lesner@gmail.com
