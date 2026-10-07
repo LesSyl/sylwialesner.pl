@@ -382,7 +382,7 @@ button {
 		}
 
 		&--contact {
-			color: $color-muted;
+			  text-shadow: 1.5px 1.5px 3px $color-accent;
 		}
 	}
 }
