@@ -1028,6 +1028,8 @@ button {
 		display: block;
 		width: auto;
 		padding: 0;
+		-webkit-backdrop-filter: none;
+		backdrop-filter: none;
 		background: transparent;
 		opacity: 1;
 		pointer-events: auto;
@@ -1041,6 +1043,7 @@ button {
 		}
 
 		&__link {
+			position: static; 
 			display: inline-flex;
 			gap: 0.4em;
 			padding: 0.35em 0;
