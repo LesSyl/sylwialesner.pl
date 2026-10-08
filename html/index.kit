@@ -12,7 +12,11 @@
 </head>
 
 <body class="page">
-
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+            <path d="M7 5v2h8.59L4 18.59 5.41 20 17 8.41V17h2V5H7z" fill="currentColor" />
+        </symbol>
+    </svg>
     <header class="site-header" data-header>
         <div class="container site-header__inner">
             <a class="brand" href="#start" aria-label="Sylwia Lesner — strona główna">
@@ -34,7 +38,9 @@
                     <li class="site-nav__item"><a class="site-nav__link" href="#realizacje">Realizacje</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="#proces">Proces</a></li>
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--contact" href="#kontakt">Kontakt
-                            <span aria-hidden="true">↗</span></a></li>
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow"></use>
+                            </svg></a></li>
                 </ul>
             </nav>
         </div>
@@ -79,10 +85,14 @@
                         </p>
 
                         <div class="hero__actions">
-                            <a class="button button--primary" href="#kontakt">Porozmawiajmy <span
-                                    aria-hidden="true">&#8599;&#xFE0E;</span></a>
-                            <a class="text-link" href="#realizacje">Zobacz realizacje <span
-                                    aria-hidden="true">↓</span></a>
+                            <a class="button button--primary" href="#kontakt">Porozmawiajmy <svg class="icon-arrow"
+                                    aria-hidden="true" focusable="false">
+                                    <use href="#icon-arrow"></use>
+                                </svg></a>
+                            <a class="text-link" href="#realizacje">Zobacz realizacje <svg
+                                    class="icon-arrow icon-arrow--down" aria-hidden="true" focusable="false">
+                                    <use href="#icon-arrow"></use>
+                                </svg></a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +180,12 @@
                 <div class="services__grid">
                     <article class="service">
                         <span class="service__number">01</span>
-                        <div class="service__icon" aria-hidden="true">↗</div>
+                        <div class="service__icon" aria-hidden="true">
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow" />
+                            </svg>
+                        </div>
+
                         <h3 class="service__title">Strona internetowa</h3>
                         <p class="service__description">Nowoczesna strona dopasowana do Twojej firmy, klientów i
                             oferty. Przemyślana tak, żeby dobrze reprezentowała Twój biznes.</p>
@@ -178,7 +193,11 @@
 
                     <article class="service">
                         <span class="service__number">02</span>
-                        <div class="service__icon" aria-hidden="true">↗</div>
+                        <div class="service__icon" aria-hidden="true">
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow" />
+                            </svg>
+                        </div>
                         <h3 class="service__title">One Page</h3>
                         <p class="service__description">Prosta i konkretna strona dla małej firmy, nowej usługi albo
                             jednej oferty, którą chcesz dobrze pokazać.</p>
@@ -186,7 +205,11 @@
 
                     <article class="service">
                         <span class="service__number">03</span>
-                        <div class="service__icon" aria-hidden="true">↗</div>
+                        <div class="service__icon" aria-hidden="true">
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow" />
+                            </svg>
+                        </div>
                         <h3 class="service__title">Wizytówka Google</h3>
                         <p class="service__description">Pomogę dobrze przygotować Profil Firmy w Google, żeby
                             klienci łatwiej mogli Cię znaleźć i skontaktować się z Tobą.</p>
@@ -194,7 +217,11 @@
 
                     <article class="service">
                         <span class="service__number">04</span>
-                        <div class="service__icon" aria-hidden="true">↗</div>
+                        <div class="service__icon" aria-hidden="true">
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow" />
+                            </svg>
+                        </div>
                         <h3 class="service__title">Widoczność w Google</h3>
                         <p class="service__description">Zadbam o techniczne podstawy SEO i strukturę strony, żeby
                             była dobrze przygotowana do wyszukiwania przez klientów.</p>
@@ -202,7 +229,11 @@
 
                     <article class="service">
                         <span class="service__number">05</span>
-                        <div class="service__icon" aria-hidden="true">↗</div>
+                        <div class="service__icon" aria-hidden="true">
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow" />
+                            </svg>
+                        </div>
                         <h3 class="service__title">Opieka nad stroną</h3>
                         <p class="service__description">Aktualizacje, zmiany treści i drobne poprawki, kiedy chcesz
                             coś zmienić lub dodać na swojej stronie.</p>
@@ -210,7 +241,11 @@
 
                     <article class="service">
                         <span class="service__number">06</span>
-                        <div class="service__icon" aria-hidden="true">↗</div>
+                        <div class="service__icon" aria-hidden="true">
+                            <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                                <use href="#icon-arrow" />
+                            </svg>
+                        </div>
                         <h3 class="service__title">Odświeżenie strony</h3>
                         <p class="service__description">Masz już stronę, ale nie jesteś z niej zadowolony? Poprawimy
                             jej wygląd, treści i układ, żeby lepiej służyła Twojej firmie.</p>
@@ -246,7 +281,10 @@
                             <div class="project__meta">
                                 <span>01 / 03</span>
                                 <strong>Kwiaciarnia</strong>
-                                <span>Web design ↗</span>
+                                <span class="project__meta-web">Web design <svg class="icon-arrow" aria-hidden="true"
+                                        focusable="false">
+                                        <use href="#icon-arrow"></use>
+                                    </svg></span>
                             </div>
                         </a>
                     </article>
@@ -261,7 +299,10 @@
                             <div class="project__meta">
                                 <span>02 / 03</span>
                                 <strong>RBTranskop</strong>
-                                <span>Web design ↗</span>
+                                <span class="project__meta-web">Web design <svg class="icon-arrow" aria-hidden="true"
+                                        focusable="false">
+                                        <use href="#icon-arrow"></use>
+                                    </svg></span>
                             </div>
                         </a>
                     </article>
@@ -278,7 +319,10 @@
                             <div class="project__meta">
                                 <span>03 / 03</span>
                                 <strong>Apart Lastovicka</strong>
-                                <span>Web design ↗</span>
+                                <span class="project__meta-web">Web design <svg class="icon-arrow" aria-hidden="true"
+                                        focusable="false">
+                                        <use href="#icon-arrow"></use>
+                                    </svg></span>
                             </div>
                         </a>
                     </article>
@@ -347,7 +391,9 @@
                         możemy zacząć od rozmowy.
                     </p>
                     <a class="button button--light" href="mailto:sylwia.k.lesner@gmail.com">Porozmawiajmy o Twojej
-                        firmie <span aria-hidden="true">↗</span></a>
+                        firmie <svg class="icon-arrow" aria-hidden="true" focusable="false">
+                            <use href="#icon-arrow"></use>
+                        </svg></a>
                 </div>
             </div>
         </section>

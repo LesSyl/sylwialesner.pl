@@ -222,12 +222,51 @@ button {
 	&--primary {
 		background: $color-dark;
 		color: $color-white;
+		// DODANE: Płynne przejście tła i koloru tekstu samego przycisku
+		transition: background 0.5s ease, color 0.5s ease;
 
+		// Odwołujemy się do fizycznej klasy .arrow z Twojego HTML
+		.arrow {
+			width: 1em;
+			height: 1em;
+			flex: 0 0 auto;
+			// POPRAWIONE: 'fill' zamiast 'background' + dodane płynne przejście koloru ikony
+			transition: transform 0.5s $ease-out, fill 0.5s ease;
+		}
+
+		// Efekt po najechaniu na przycisk
 		&:hover {
 			background: $color-accent;
 			color: $color-dark;
+
+			// Zmiana pozycji i koloru strzałki
+			.arrow {
+				fill: $color-dark; /* Jeśli używasz zmiennej $color-dark */
+				transform: translate(3px, -3px);
+			}
 		}
 	}
+
+	// &--primary {
+	// 	background: $color-dark;
+	// 	color: $color-white;
+	// 	&__arrow {
+	// 		width: 1em;
+	// 		height: 1em;
+	// 		flex: 0 0 auto;
+	// 		transition: transform 0.5s $ease-out, background .5s ease;
+	// 	}
+
+	// 	&:hover .arrow {
+	// 		fill: $color-dark;
+	// 		transform: translate(3px, -3px);
+	// 	}
+
+	// 	&:hover {
+	// 		background: $color-accent;
+	// 		color: $color-dark;
+	// 	}
+	// }
 
 	&--light {
 		background: $color-accent;
@@ -805,7 +844,11 @@ button {
 		gap: 0.35em;
 		padding-top: 0.8em;
 
-		span {
+		&-web {
+			display: inline-flex; // tekst i strzałka w jednej linii
+			align-items: center; // wyrównanie w pionie
+			justify-self: start; // nie rozciąga się na całą szerokość gridu
+			gap: 0.4em; // odstęp tekst–strzałka
 			color: $color-muted;
 		}
 

@@ -1,3 +1,4 @@
+@use 'colors' as *;
 .ribbon {
 	--line-dark: 52, 52, 46; /* RGB ciemnych linii */
 	--line-green: 188, 232, 30; /* RGB zielonego akcentu */
@@ -6,7 +7,7 @@
 	z-index: -1; /* pod tekstem */
 	width: 100%;
 	height: 100%;
-    opacity: 0.55;
+	opacity: 0.55;
 	display: block;
 	--ribbon-shift: 10vh; /* o ile przesunąć całą grafikę w dół */
 	overflow: visible; /* linie mogą wyjść poza ramkę SVG */
@@ -19,3 +20,66 @@
 	stroke-width: 0.7;
 	vector-effect: non-scaling-stroke;
 }
+.icon-arrow {
+	display: block; // bez dziwnych odstępów jak przy inline
+	flex: 0 0 auto; // flex nie będzie jej ściskał
+	width: 1em; // rozmiar zależy od font-size rodzica
+	height: 1em;
+	color: var(--arrow-color, currentColor); // domyślnie kolor tekstu
+	fill: currentColor;
+	transition: translate 0.35s $ease-out;
+
+	&--down {
+		rotate: 135deg;
+	}
+}
+
+:is(a, button):hover .icon-arrow {
+	translate: 3px -3px;
+}
+:is(a, button):hover .icon-arrow--down {
+	translate: 0 3px;
+}
+
+// .arrow {
+// 	width: 16px; /* Możesz dopasować rozmiar */
+// 	height: 16px;
+// 	fill: $color-accent;
+
+// 	// &-dark {
+// 	// 	fill: $color-ink;
+// 	// }
+// 	&-white {
+// 		fill: $color-surface;
+// 		:hover {
+// 			fill: $color-ink;
+// 		}
+// 	}
+// }
+// .arrow:hover {
+// 	/* Lekkie przesunięcie o 3 piksele w prawo i 3 piksele w górę (-3px) */
+// 	transform: translate(3px, -3px);
+// }
+
+// .icon-arrow {
+// 	display: inline-block;
+// 	flex: 0 0 auto;
+// 	width: 1em; // rozmiar = rozmiar tekstu w danym miejscu
+// 	height: 1em;
+// 	color: inherit; // kolor zawsze taki jak tekst
+// 	transition: transform 0.35s $ease-out;
+
+// 	// kierunki (opcjonalnie): <svg class="icon-arrow icon-arrow--down">
+// 	&--right {
+// 		transform: rotate(45deg);
+// 	}
+// 	&--down {
+// 		transform: rotate(135deg);
+// 	}
+// }
+
+// // animacja przy najechaniu, działa w każdym linku i przycisku z tą ikoną
+// :is(a, button):hover > .icon-arrow,
+// :is(a, button):focus-visible > .icon-arrow {
+// 	transform: translate(3px, -3px);
+// }
